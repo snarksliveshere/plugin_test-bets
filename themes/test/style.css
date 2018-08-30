@@ -1,0 +1,8 @@
+/*
+Theme Name: The Test
+Text Domain: test
+*/
+.header_nav li {
+    font-size: 20px;
+    margin-right: 15px;
+}
