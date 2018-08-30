@@ -21,8 +21,6 @@ function test_addMedia() {
 }
 
 function test_afterSetup() {
-	// TODO: посмотреть, как готовить к переводу
-//	register_nav_menu( 'top', 'Верхнее');
 	register_nav_menus( ['top'    => __( 'top', 'Верхнее' )] );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
@@ -59,7 +57,6 @@ add_action( 'wp_ajax_addBet', 'test_ajax_addBet' );
 
 add_action( 'wp_ajax_setBet', 'test_ajax_setBet' );
 add_action( 'wp_ajax_nopriv_setBet', 'test_ajax_setBet' );
-// TODO: разные функции на nopriv & обычную
 
 function cleanValue($value, $type) {
 	if ( $type == 'string' ) {

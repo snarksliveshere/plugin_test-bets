@@ -1,7 +1,6 @@
 <?php
 get_header(); ?>
 	<div class="container">
-<!--        TODO:query_post-->
 		<div class="row">
 			<div class="col-md-8">
 				<?php if(have_posts()) :
@@ -11,8 +10,6 @@ get_header(); ?>
 							<a href="<?php the_permalink()?>">
 								<?php the_post_thumbnail([100,100])?>
 							</a>
-
-
 						</div>
 					<?php endwhile; ?>
 				<?php else: ?>
